@@ -43,7 +43,6 @@ import { RouterLink } from 'vue-router'
   padding: 10px;
 }
 
-
 .router-link-active {
   color: #FFDA96;
   font-size: 40px;
@@ -67,10 +66,42 @@ a:active {
   color: #FFDA96;
 }
 
-@media only screen and (max-width: 600px) {
+/* Mobile */
+@media only screen and (max-width: 1023px) {
   .logo{
     max-width: 100px;
   }
+}
+
+/* Tablet */
+@media only screen and (min-width: 1024px) {
+
+  .logo{
+    max-width: 150px;
+  }
+
+  .router-link-active {
+  color: #FFDA96;
+  font-size: 60px;
+}
+
+.router-link-active:hover {
+  text-shadow: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 50px;
+}
+a:hover {
+  text-shadow: white 3px 3px;
+}
+
+a:active {
+  text-shadow: white 3px 3px;
+  color: #FFDA96;
+}
 }
 
 </style>

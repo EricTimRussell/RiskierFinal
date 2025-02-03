@@ -3,27 +3,27 @@
     <div class="row">
       <div class="col-3 d-flex">
         <RouterLink to="/">
-          <img class="logo" src="../assets/logo/Riskier-logo.png">
+          <img class="logo img-fluid" src="../assets/logo/Riskier-logo.png">
         </RouterLink>
       </div>
-      <nav class="d-flex gap-2 col-6 justify-content-center" v-motion-slide-top>
+      <nav class="gap-3 col-9 d-flex justify-content-center" v-motion-slide-top>
         <RouterLink to="dashboard">
-          <span title="Dashboard" class="text-black material-symbols-outlined fs-1">
+          <span title="Dashboard" aria-current="page" class="nav-link active material-symbols-outlined ">
             sports_esports
           </span>
         </RouterLink>
         <RouterLink to="construction">
-          <span title="Construction Page" class="text-black material-symbols-outlined fs-1">
+          <span title="Construction Page" aria-current="page" class="nav-link material-symbols-outlined">
             construction
           </span>
         </RouterLink>
         <RouterLink to="battle">
-          <span title="Battle Page" class="text-black material-symbols-outlined fs-1">
+          <span title="Battle Page" aria-current="page" class="nav-link material-symbols-outlined">
             swords
           </span>
         </RouterLink>
         <RouterLink to="rules">
-          <span title="Rules Page" class="text-black material-symbols-outlined fs-1">
+          <span title="Rules Page" aria-current="page" class="nav-link material-symbols-outlined">
             menu_book
           </span>
         </RouterLink>
@@ -42,11 +42,35 @@ import { RouterLink } from 'vue-router'
   background-color: #7c8a71;
   padding: 10px;
 }
-.logo{
-  max-width: 150px;
-  padding: 10px;
-}
+
+
 .router-link-active {
   color: #FFDA96;
+  font-size: 40px;
 }
+
+.router-link-active:hover {
+  text-shadow: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 30px;
+}
+a:hover {
+  text-shadow: white 3px 3px;
+}
+
+a:active {
+  text-shadow: white 3px 3px;
+  color: #FFDA96;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo{
+    max-width: 100px;
+  }
+}
+
 </style>

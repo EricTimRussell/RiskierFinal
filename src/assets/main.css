@@ -3,3 +3,11 @@
   font-family: Saira Stencil One, Impact;
   overflow: hidden;
 }
+
+.bg-green {
+  background: linear-gradient(#606c38, #283618);
+}
+
+.bg-olive {
+  background-color: #7c8a71;
+}

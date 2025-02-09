@@ -12,6 +12,7 @@
   background-color: #7c8a71;
 }
 
+/* SECTION  Buttons*/
 button {
   background: linear-gradient(#ffda96, #dda15e);
   box-shadow: black 4px 4px;
@@ -22,16 +23,13 @@ button {
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
 }
-
 button:hover {
   text-shadow: darkgray 2px 2px;
 }
-
 button:active {
   box-shadow: none;
   background: #515151;
 }
-
 button:disabled {
   box-shadow: none;
   background: #515151;

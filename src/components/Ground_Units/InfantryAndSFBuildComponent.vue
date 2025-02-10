@@ -38,9 +38,9 @@
       </div>
       <div class="d-flex flex-column align-items-center">
         <h6 class="px-2">Special Forces</h6>
-        <h6 class="px-2 fs-4 text-success add-unit-transform"><strong>+1</strong></h6>
-        <h6 class="px-2 fs-4 text-danger add-unit-transform"><strong>-1</strong></h6>
-        <h6 class="px-2 fs-4"><strong>0</strong></h6>
+        <!-- <h6 class="px-2 fs-4 text-success add-unit-transform"><strong>+1</strong></h6>
+        <h6 class="px-2 fs-4 text-danger add-unit-transform"><strong>-1</strong></h6> -->
+        <h6 class="px-2 fs-4"><strong>{{ faction[0]?.ground_units.special_forces }}</strong></h6>
       </div>
       <div>
         <button class="text-dark"><span class="material-symbols-outlined fs-2 p-2">add</span></button>

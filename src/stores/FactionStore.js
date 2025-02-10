@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 import { collection, getDocs } from "firebase/firestore";
-import { useFirestore } from "vuefire";
+import { useCollection, useFirestore } from "vuefire";
 
 const db = useFirestore()
 export const useFactionStore = defineStore('factionStore', {
@@ -8,12 +8,14 @@ export const useFactionStore = defineStore('factionStore', {
   state: () => ({
     faction: []
   }),
-  // Functions that update the faction state
   actions: {
     // All the actions needed to manage a factions units and resource totals
     async fetchFaction(){
       const snapshot = await getDocs(collection(db, 'faction'))
       this.faction = snapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id }))
+    }
+    async addUnit(){
+
     }
   }
 })

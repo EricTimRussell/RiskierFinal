@@ -2,7 +2,9 @@
   <header>
     <NavbarComponent />
   </header>
-  <RouterView />
+  <Suspense>
+    <RouterView />
+  </Suspense>
 
 </template>
 

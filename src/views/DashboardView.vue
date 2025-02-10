@@ -6,12 +6,14 @@
         <span class="fs-2">Ground Units</span>
       </div>
     </div>
-    <InfantryAndSFBuildComponent />
+    <InfantryAndSFBuildComponent :faction="factionStore.faction" />
   </div>
 </template>
 
 <script setup>
 import InfantryAndSFBuildComponent from "@/components/Ground_Units/InfantryAndSFBuildComponent.vue";
+import { useFactionStore } from "@/stores/FactionStore";
 
-
+const factionStore = useFactionStore()
+factionStore.fetchFaction()
 </script>
